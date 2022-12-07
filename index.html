@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> PROBLEMA DE LOS VASOS DE VINO </h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#p1">Problema 1</a></li> &nbsp;
+            <li><a href="index2.html" target="_blank">Problema 2</a></li>
+            &nbsp;<li><a href="indexju.html" target="_blank">Juego</a></li>
+            
+        </ul>
+    </nav>
+    <a id="p1"></a>
+    <h2> Resumen Capitulo VIII</h2>
+    <P>
+        Caminaban el Bagdalí y el calculista con el turbante y hablando de las figuras geométricas,
+
+        Había descontento porque al parecer al  turbante le faltaban formas geométricas
+
+        El persa insistía que la geometría existía en todas partes
+
+        Después de caminar ven la hostería de las siete penas, Bermiz explica el significado del numero 7 ,lo llama sagrado por la suma del 3 y el 4
+
+        Cuando se encontraron con su amigo Salem, quien les mostró otro problema derivado de un pago de carneros con vino:
+
+        A tres árabes les habían dado de pago 7 vasos llenos de vino, 7 con la mitad de vivo y 7 vacíos y que tenían que repartirse la misma cantidad de vasos y de vino, él dijo que la respuesta era fácil, el primero que reciba 3 llenos, uno medio lleno, y tres vacíos, al segundo te tocaría 2 vasos llenos, 3 medio llenos, y 2 vacíos, al tercero le tocaría 2 llenos, 2 medio llenos y 2 vacíos. El calculador había descifrado el misterio que tenia la vieja hostería  
+    </P>
+    <br>
+    <h2> Explicacion de la solucion </h2>
+    <p>
+        Primeramente tomamos los vasos llenos y los repartimos entre los tres socios <br>
+        no importa el orden solo las cantidades como son 7 vasos : <br>
+        primero   segundo  tercero <br>
+           2    +    2    +   3   = 7 pero como sabemos 1 vasos lleno equivale a dos medio llenos 
+        entonces tendriamos algo como esto : <br>
+        primero   segundo  tercero <br>
+           4    +    4    +   6   vasos medio llenos es preferible convertir todo a solo vasos medio llenos <br>
+        Como cada uno debe tener la misma cantidad de vino, repartimos los 7 vasos medio llenos : <br>
+        primero   segundo  tercero
+           3    +    3    +   1   = 7  Por el momento tenemos algo como esto regresando a las catidades verdaderas : <br>
+        primero   segundo  tercero <br>
+           2    +    2    +   3   vasos llenos <br>
+           3    +    3    +   1   vasos medio llenos <br>
+        como ya tenemos repartidos los vasos llenos y medio llenos aun nos queda repartir los vasos vacios y que cada uno tenga la misma cantidad de vasos <br>
+        eso ya es bastante simple, solo debemos dar la cantidad faltante de una suma por columnas, por lo cual nos quedaria algo asi : <br>
+        primero   segundo  tercero <br>
+        2    +    2    +   3   vasos llenos <br>
+        3    +    3    +   1   vasos medio llenos <br>
+        2    +    2    +   3   vasos vacios <br>
+    </p>
+    <h2 align="center">Formulario</h2>
+    <br>
+    <br>
+    <section align="center">
+
+        <div class="respuesta" >
+            <br>
+            <br>
+            <label>Numero de vasos :</label>&nbsp;&nbsp;&nbsp;<input type="number" id=a placeholder=" introduzca 21"><br>
+            <br>
+            <label>Numero de personas :</label>&nbsp;&nbsp;&nbsp;<input type="number" id=b placeholder=" introduzca 3"><br>
+            <br>
+            <button onclick="calcular()"> calcular </button>
+            <br>
+            <br>
+            <div id="calcular"></div>
+            <div id="calcular1"></div>
+            <div id="calcular2"></div>
+            <div id="calcular3"></div>
+        </div>
+    </section>
+    <script src="c1.js"></script>
+</body>
+</html>
